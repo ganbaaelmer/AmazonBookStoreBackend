@@ -9,10 +9,10 @@ const User = require("./models/User");
 dotenv.config({ path: "./config/config.env" });
 
 mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useCreateIndex: true,
+  // useFindAndModify: false,
+  // useUnifiedTopology: true,
 });
 
 const categories = JSON.parse(
