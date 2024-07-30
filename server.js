@@ -47,7 +47,7 @@ var corsOptions = {
       callback(null, true);
     } else {
       // Энэ домэйнд хандахыг хориглоно.
-      callback(new Error("Horigloj baina.."));
+      callback(new Error("Хоригдож байна.."));
     }
   },
   // Клиент талаас эдгээр http header-үүдийг бичиж илгээхийг зөвшөөрнө

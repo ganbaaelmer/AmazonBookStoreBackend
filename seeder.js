@@ -43,9 +43,9 @@ const deleteData = async () => {
     await Category.deleteMany();
     await Book.deleteMany();
     await User.deleteMany();
-    console.log("Өгөгдлийг бүгдийг устгалаа....".red.inverse);
+    console.log("Өгөгдлийг бүгдийг устгалаа. SUCCESS : ".red.inverse);
   } catch (err) {
-    console.log('---- ДАТА УСГТГАХАД АЛДАА ГАРЛАА: ', + err.red);
+    console.log('---- ДАТА УСГТГАХАД АЛДАА ГАРЛАА. ERROR : ', + err.red);
   }
 };
 
