@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+//mongodb+srv://ganbaa:amazon123@cluster0.dqmlvg7.mongodb.net/
 
 const connectDB = async () => {
   const conn = await mongoose.connect(process.env.MONGODB_URI, {

@@ -1,0 +1,2 @@
+root
+DigitalOcean@48password
