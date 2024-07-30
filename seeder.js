@@ -45,7 +45,7 @@ const deleteData = async () => {
     await User.deleteMany();
     console.log("Өгөгдлийг бүгдийг устгалаа....".red.inverse);
   } catch (err) {
-    console.log(err.red.inverse);
+    console.log('---- ДАТА УСГТГАХАД АЛДАА ГАРЛАА: ', + err.red);
   }
 };
 
