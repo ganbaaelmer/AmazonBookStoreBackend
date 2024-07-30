@@ -32,13 +32,13 @@ exports.login = asyncHandler(async (req, res, next) => {
   const user = await User.findOne({ email }).select("+password");
 
   if (!user) {
-    throw new MyError("Имэйл болон нууц үгээ зөв оруулна уу", 401);
+    throw new MyError("Имэйл болон нууц үгээ зөв оруулна уу User", 401);
   }
 
   const ok = await user.checkPassword(password);
 
   if (!ok) {
-    throw new MyError("Имэйл болон нууц үгээ зөв оруулна уу", 401);
+    throw new MyError("Имэйл болон нууц үгээ зөв оруулна уу Password", 401);
   }
 
   const token = user.getJsonWebToken();
